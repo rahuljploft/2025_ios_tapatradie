@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>512721977025-rmojvmj03ldgld5lo9ffub3e42uad9ev.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.512721977025-rmojvmj03ldgld5lo9ffub3e42uad9ev</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>512721977025-ljfcj0efcbst6b692elknr9931ansu6h.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBTly0aeSaTgJAk0QbhbDFZETqzqvdsSDg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>512721977025</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>tradie.com</string>
+	<key>PROJECT_ID</key>
+	<string>tap-a-tradie</string>
+	<key>STORAGE_BUCKET</key>
+	<string>tap-a-tradie.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:512721977025:ios:ce3004d8bf2a3677</string>
+	<key>DATABASE_URL</key>
+	<string>https://tap-a-tradie.firebaseio.com</string>
+</dict>
+</plist>

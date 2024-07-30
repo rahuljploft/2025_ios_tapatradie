@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GTWalsheimPro-Light.ttf">
+            <string>GTWalsheimPro-Light</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TabBarCell" id="gTV-IL-0wX" customClass="TabBarCell" customModule="TapATradie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="114" height="89"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="114" height="89"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Lj0-g3-DL8">
+                        <rect key="frame" x="41.5" y="24.5" width="31" height="40"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 4302" translatesAutoresizingMaskIntoConstraints="NO" id="HQA-c7-Inq" userLabel="Icon">
+                                <rect key="frame" x="5.5" y="0.0" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="3jf-JJ-hln"/>
+                                    <constraint firstAttribute="height" constant="20" id="x2h-EX-zEd"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JfR-MB-ksm" userLabel="Label">
+                                <rect key="frame" x="0.0" y="25" width="31" height="15"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="Tlr-gy-EA6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GTWalsheimPro-Light" family="GT Walsheim Pro" pointSize="12"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDA-Ok-HYd" userLabel="Border">
+                        <rect key="frame" x="113" y="16" width="1" height="57"/>
+                        <color key="backgroundColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="gGA-l3-YXG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                        <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Lj0-g3-DL8" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="4sa-9U-83O"/>
+                <constraint firstItem="zDA-Ok-HYd" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="16" id="8Fa-Cl-OgE"/>
+                <constraint firstItem="Lj0-g3-DL8" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="be5-AY-8Fl"/>
+                <constraint firstAttribute="bottom" secondItem="zDA-Ok-HYd" secondAttribute="bottom" constant="16" id="iFH-7z-JD3"/>
+                <constraint firstAttribute="trailing" secondItem="zDA-Ok-HYd" secondAttribute="trailing" id="mQg-oG-WJX"/>
+            </constraints>
+            <size key="customSize" width="114" height="89"/>
+            <connections>
+                <outlet property="border" destination="zDA-Ok-HYd" id="MVh-0y-vUL"/>
+                <outlet property="icon" destination="HQA-c7-Inq" id="Bl3-hu-1Ir"/>
+                <outlet property="label" destination="JfR-MB-ksm" id="xpB-ej-MnB"/>
+            </connections>
+            <point key="canvasLocation" x="184.05797101449278" y="125.55803571428571"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Group 4302" width="64" height="64"/>
+    </resources>
+</document>

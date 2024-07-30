@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Tradie_QR.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

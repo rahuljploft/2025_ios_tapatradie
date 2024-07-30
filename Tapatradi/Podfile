@@ -1,0 +1,65 @@
+use_frameworks!
+
+workspace 'TapATradie'
+
+def common_pods
+  pod 'FlagKit'
+  pod 'Alamofire', '~> 5.4'
+  pod 'ObjectMapper', '~> 3.5'
+  pod 'FBSDKLoginKit'
+  pod 'DropDown'
+  pod 'DialCountries'
+  pod 'PhoneNumberKit'
+  pod 'GooglePlaces'
+  pod 'GoogleMaps'
+  pod 'SDWebImage'
+  pod 'ImageScrollView'
+  pod "DynamicBlurView"
+  pod 'ProgressHUD'
+end
+
+target 'Common' do
+  project 'Common/Common'
+  common_pods
+end
+
+target 'CommonTests' do
+  project 'Common/Common'
+  common_pods
+end
+
+def app_pods
+  pod 'GooglePlaces'
+  pod 'GooglePlacePicker'
+  pod 'GoogleMaps'
+
+  pod 'Firebase/Core'
+  pod 'Firebase/Messaging'
+  pod 'Firebase/Analytics'
+
+  pod 'Crashlytics', '~> 3.13.4'
+
+  pod 'IQKeyboardManager'
+  pod 'FloatRatingView', '~> 3.0.0'
+  pod 'Socket.IO-Client-Swift'
+  pod 'Fabric', '~> 1.10.2'
+  pod 'ImageScrollView'
+  pod 'ProgressHUD'
+  pod 'SDWebImage'
+  common_pods
+end
+
+target 'Tradie' do
+  project 'Tradie'
+  pod 'OpalImagePicker'
+  pod "DynamicBlurView"
+  app_pods
+end
+
+target 'TapATradie' do
+  project 'TapATradie'
+  pod 'SDWebImage'
+  pod 'OpalImagePicker'
+  pod "DynamicBlurView"
+  app_pods
+end

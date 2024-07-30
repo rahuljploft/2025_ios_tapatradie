@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GTWalsheimPro-Regular.ttf">
+            <string>GTWalsheimPro-Regular</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomTextField" customModule="Common" customModuleProvider="target">
+            <connections>
+                <outlet property="messageLabel" destination="Uao-KY-Ou1" id="uOG-Bx-Qhr"/>
+                <outlet property="phoneCodeButton" destination="lOI-1z-204" id="8vJ-L9-ZDX"/>
+                <outlet property="textField" destination="ghe-BI-5eS" id="5d3-BS-C3m"/>
+                <outlet property="validationStatusButton" destination="JvC-J6-NrX" id="aR8-aV-rzB"/>
+                <outlet property="view" destination="iN0-l3-epB" id="RSD-zI-AIC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="107"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="999" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobile Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ghe-BI-5eS" userLabel="Text Field">
+                    <rect key="frame" x="0.0" y="25" width="414" height="57"/>
+                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lOI-1z-204" userLabel="Phone Code Button">
+                    <rect key="frame" x="15" y="38.5" width="48" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="+61"/>
+                    <connections>
+                        <action selector="phoneCodeButton_TouchUpInside:" destination="-1" eventType="touchUpInside" id="qNI-bQ-29G"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uao-KY-Ou1" userLabel="Message Label">
+                    <rect key="frame" x="0.0" y="87" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" name="GTWalsheimPro-Regular" family="GT Walsheim Pro" pointSize="14"/>
+                    <color key="textColor" red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JvC-J6-NrX" userLabel="Validation Status Button">
+                    <rect key="frame" x="375" y="41.5" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="ANd-9k-nir"/>
+                        <constraint firstAttribute="height" constant="24" id="JAi-Px-iH2"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain">
+                        <backgroundConfiguration key="background" image="Validation Check" imageContentMode="scaleAspectFit"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="validationStatusButton_TouchUpInside:" destination="-1" eventType="touchUpInside" id="yGS-Eh-wgf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="JvC-J6-NrX" firstAttribute="centerY" secondItem="ghe-BI-5eS" secondAttribute="centerY" id="4wg-A3-dx7"/>
+                <constraint firstItem="Uao-KY-Ou1" firstAttribute="leading" secondItem="ghe-BI-5eS" secondAttribute="leading" id="I1A-Lq-JX6"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ghe-BI-5eS" secondAttribute="bottom" constant="25" id="K86-84-Wcy"/>
+                <constraint firstItem="ghe-BI-5eS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="OM0-Pv-Syd"/>
+                <constraint firstItem="JvC-J6-NrX" firstAttribute="trailing" secondItem="ghe-BI-5eS" secondAttribute="trailing" constant="-15" id="PC3-Iu-l5f"/>
+                <constraint firstItem="Uao-KY-Ou1" firstAttribute="top" secondItem="ghe-BI-5eS" secondAttribute="bottom" constant="5" id="a6V-Vp-fJe"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ghe-BI-5eS" secondAttribute="trailing" id="dra-Ua-T7Q"/>
+                <constraint firstItem="lOI-1z-204" firstAttribute="leading" secondItem="ghe-BI-5eS" secondAttribute="leading" constant="15" id="fd9-Ff-zmY"/>
+                <constraint firstItem="lOI-1z-204" firstAttribute="firstBaseline" secondItem="ghe-BI-5eS" secondAttribute="firstBaseline" id="g9M-Rs-5EY"/>
+                <constraint firstItem="ghe-BI-5eS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="hDz-8S-UqZ"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="82.5" y="-116.875"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Validation Check" width="44.5" height="44.5"/>
+    </resources>
+</document>

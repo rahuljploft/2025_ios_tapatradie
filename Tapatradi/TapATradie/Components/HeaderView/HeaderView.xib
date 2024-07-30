@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GTWalsheimPro-Light.ttf">
+            <string>GTWalsheimPro-Light</string>
+        </array>
+        <array key="GTWalsheimPro-Regular.ttf">
+            <string>GTWalsheimPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeaderView" customModule="TapATradie" customModuleProvider="target">
+            <connections>
+                <outlet property="addressButton" destination="i27-db-XW0" id="OLg-ZI-GD9"/>
+                <outlet property="backButton" destination="8Gy-0R-8pG" id="agp-34-YZM"/>
+                <outlet property="hamburgerMenuButton" destination="dsg-Lu-R53" id="3pK-ly-XG6"/>
+                <outlet property="notificationButton" destination="GE8-l8-6SQ" id="bIT-z1-kCo"/>
+                <outlet property="notificationCountLabel" destination="7CC-gz-KQk" id="Ieg-ZF-aCY"/>
+                <outlet property="view" destination="iN0-l3-epB" id="4lt-DD-XbQ"/>
+                <outlet property="viewNotification" destination="g8A-uA-wDz" id="1Pe-3N-MWO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="548" height="55"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsg-Lu-R53" userLabel="Hamburger Menu Button">
+                    <rect key="frame" x="0.0" y="9.5" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="KS5-0a-RIb"/>
+                        <constraint firstAttribute="width" constant="50" id="N9H-8y-lQ1"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" image="Hamburger Menu">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="hamburgerMenuButton_touchUpInside:" destination="-1" eventType="touchUpInside" id="EaG-nK-bYH"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Gy-0R-8pG" userLabel="Back Button">
+                    <rect key="frame" x="0.0" y="9.5" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="bzb-OX-rmZ"/>
+                        <constraint firstAttribute="height" constant="50" id="jN3-Gc-Mic"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" image="Back">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="backButton_touchUpInside:" destination="-1" eventType="touchUpInside" id="G14-uB-XfC"/>
+                    </connections>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Hsn-4S-dM4">
+                    <rect key="frame" x="420" y="12" width="108" height="45"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="d9d-q9-7Yt" userLabel="Address">
+                            <rect key="frame" x="0.0" y="9.5" width="53" height="26"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="svq-LI-a7t" userLabel="Map Marker Button">
+                                    <rect key="frame" x="0.0" y="4" width="11" height="18"/>
+                                    <fontDescription key="fontDescription" name="GTWalsheimPro-Light" family="GT Walsheim Pro" pointSize="15"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" image="Map Marker">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="address_touchUpInside:" destination="-1" eventType="touchUpInside" id="Rnq-IF-aoR"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="i27-db-XW0" userLabel="Address Button">
+                                    <rect key="frame" x="11" y="0.0" width="42" height="26"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="GTWalsheimPro-Light" family="GT Walsheim Pro" pointSize="12"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="Address">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="address_touchUpInside:" destination="-1" eventType="touchUpInside" id="GWE-F1-kYi"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g8A-uA-wDz" userLabel="Notification">
+                            <rect key="frame" x="63" y="0.0" width="45" height="45"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GE8-l8-6SQ" userLabel="Notification Button">
+                                    <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" image="Notification">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="notificationButton_touchUpInside:" destination="-1" eventType="touchUpInside" id="zts-zb-Lne"/>
+                                    </connections>
+                                </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zRG-TY-sla" userLabel="Notification Count">
+                                    <rect key="frame" x="22.5" y="8.5" width="14" height="14"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7CC-gz-KQk" userLabel="Notification Count Label">
+                                            <rect key="frame" x="2" y="2" width="10" height="10"/>
+                                            <color key="backgroundColor" red="1" green="0.73725490199999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" name="GTWalsheimPro-Regular" family="GT Walsheim Pro" pointSize="11"/>
+                                            <color key="textColor" red="0.95294117649999999" green="0.94901960780000005" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="1" green="0.73725490199999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="7CC-gz-KQk" secondAttribute="bottom" constant="2" id="2z2-h6-p8J"/>
+                                        <constraint firstItem="7CC-gz-KQk" firstAttribute="leading" secondItem="zRG-TY-sla" secondAttribute="leading" constant="2" id="7eZ-47-wfi"/>
+                                        <constraint firstItem="7CC-gz-KQk" firstAttribute="top" secondItem="zRG-TY-sla" secondAttribute="top" constant="2" id="AxJ-QV-N8i"/>
+                                        <constraint firstAttribute="height" constant="14" id="ECa-bK-cbj"/>
+                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="14" id="Ggr-6g-aSO"/>
+                                        <constraint firstAttribute="trailing" secondItem="7CC-gz-KQk" secondAttribute="trailing" constant="2" id="j1x-qV-0yW"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="GE8-l8-6SQ" firstAttribute="centerX" secondItem="g8A-uA-wDz" secondAttribute="centerX" id="0iq-kk-dOA"/>
+                                <constraint firstAttribute="width" constant="45" id="4ai-Lj-hXp"/>
+                                <constraint firstAttribute="trailing" secondItem="GE8-l8-6SQ" secondAttribute="trailing" id="6Iu-aq-o31"/>
+                                <constraint firstAttribute="bottom" secondItem="GE8-l8-6SQ" secondAttribute="bottom" id="DHz-I5-Mae"/>
+                                <constraint firstItem="GE8-l8-6SQ" firstAttribute="top" secondItem="g8A-uA-wDz" secondAttribute="top" id="Hfc-1Z-PMe"/>
+                                <constraint firstItem="zRG-TY-sla" firstAttribute="centerY" secondItem="g8A-uA-wDz" secondAttribute="centerY" constant="-7" id="Prn-ZE-GLG"/>
+                                <constraint firstItem="GE8-l8-6SQ" firstAttribute="leading" secondItem="g8A-uA-wDz" secondAttribute="leading" id="TLW-w0-Bjm"/>
+                                <constraint firstItem="zRG-TY-sla" firstAttribute="centerX" secondItem="g8A-uA-wDz" secondAttribute="centerX" constant="7" id="XH0-rd-4Zk"/>
+                                <constraint firstItem="GE8-l8-6SQ" firstAttribute="centerY" secondItem="g8A-uA-wDz" secondAttribute="centerY" id="Xfr-gH-ysY"/>
+                                <constraint firstAttribute="height" constant="45" id="dFb-ES-vdN"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.12549019607843137" green="0.23137254901960785" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="8Gy-0R-8pG" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="0xB-XI-ggJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Hsn-4S-dM4" secondAttribute="trailing" constant="20" id="QfD-AI-cP6"/>
+                <constraint firstItem="Hsn-4S-dM4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8Gy-0R-8pG" secondAttribute="trailing" constant="20" id="QiG-8u-fGT"/>
+                <constraint firstItem="dsg-Lu-R53" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="RYw-cS-UyZ"/>
+                <constraint firstItem="dsg-Lu-R53" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="WKT-gC-kL3"/>
+                <constraint firstItem="8Gy-0R-8pG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Wz9-nP-LXg"/>
+                <constraint firstItem="Hsn-4S-dM4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dsg-Lu-R53" secondAttribute="trailing" constant="20" id="Yuk-qK-g22"/>
+                <constraint firstItem="Hsn-4S-dM4" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="jD4-dw-WrO"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="179.71014492753625" y="-130.91517857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Back" width="6.5" height="11"/>
+        <image name="Hamburger Menu" width="12" height="11"/>
+        <image name="Map Marker" width="11" height="11.5"/>
+        <image name="Notification" width="13.5" height="13.5"/>
+    </resources>
+</document>

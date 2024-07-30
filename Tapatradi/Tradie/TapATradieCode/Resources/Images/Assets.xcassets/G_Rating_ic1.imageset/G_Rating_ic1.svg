@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30.25" height="25.999" viewBox="0 0 30.25 25.999">
+  <g id="Group_10" data-name="Group 10" transform="translate(-8560 5517)">
+    <path id="Union_1" data-name="Union 1" d="M5,25a5,5,0,0,1-5-5V5A5,5,0,0,1,5,0H20a5,5,0,0,1,5,5V9.275l3.776,5.254H25V20a5,5,0,0,1-5,5Z" transform="translate(8560.5 -5516.5)" fill="#fff" stroke="#c0c1c3" stroke-width="1"/>
+    <g id="search" transform="translate(8565.519 -5511.079)">
+      <path id="Path_7" data-name="Path 7" d="M3.133,142.993l-.492,1.837-1.8.038a7.08,7.08,0,0,1-.052-6.6h0l1.6.294.7,1.591a4.218,4.218,0,0,0,.04,2.84Z" transform="translate(0 -134.451)" fill="#fbbb00"/>
+      <path id="Path_8" data-name="Path 8" d="M268.417,208.176a7.065,7.065,0,0,1-2.52,6.832h0l-2.017-.1-.285-1.782a4.212,4.212,0,0,0,1.812-2.151h-3.779v-2.8h6.789Z" transform="translate(-254.405 -202.429)" fill="#518ef8"/>
+      <path id="Path_9" data-name="Path 9" d="M41.159,313.446h0a7.07,7.07,0,0,1-10.65-2.162l2.29-1.875a4.2,4.2,0,0,0,6.057,2.152Z" transform="translate(-29.667 -300.867)" fill="#28b446"/>
+      <path id="Path_10" data-name="Path 10" d="M39.413,1.627,37.123,3.5a4.2,4.2,0,0,0-6.2,2.2l-2.3-1.885h0a7.069,7.069,0,0,1,10.789-2.19Z" transform="translate(-27.834)" fill="#f14336"/>
+    </g>
+  </g>
+</svg>
